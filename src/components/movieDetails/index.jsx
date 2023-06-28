@@ -57,13 +57,10 @@ const MovieDetails = (props) => {
         <Chip label={`Released: ${movie.release_date}`} />
       </Paper>
 
-      <Typography variant="h6" component="p">
-        Production Countries:
-      </Typography>
       <Paper component="ul" sx={styles.chipSet}>
         {movie.production_countries.map((country) => (
           <li key={country.name}>
-            <Chip label={country.name} />
+            <Chip label={`Production Countries: ${country.name}`} />
           </li>
         ))}
       </Paper>
