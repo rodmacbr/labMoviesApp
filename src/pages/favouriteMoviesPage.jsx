@@ -42,6 +42,6 @@ const FavouriteMoviesPage = (props) => {
       }}
     />
   );
-    }
+};
 
 export default FavouriteMoviesPage;

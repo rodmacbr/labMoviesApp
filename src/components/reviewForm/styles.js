@@ -1,27 +1,28 @@
 const styles =  {
-    root: {
+  root: {
       marginTop: 2,
       display: "flex",
       flexDirection: "column",
       alignItems: "left",
-    },
-    form: {
+  },
+  form: {
       width: "100%",
       "& > * ": {
-        marginTop: 2,
+      marginTop: 2,
       },
-    },
-    textField: {
+  },
+  textField: {
       width: "40ch",
-    },
-    submit: {
+  },
+  submit: {
       marginRight: 2,
-    },
-    snack: {
+  },
+  snack: {
       width: "50%",
       "& > * ": {
-        width: "100%",
+      width: "100%",
       },
-    },
-  };
-  export default styles
+  },
+};
+export default styles
+  

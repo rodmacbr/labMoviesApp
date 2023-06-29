@@ -28,6 +28,7 @@ export const getMovie = (args) => {
     throw error
  });
 };
+
   
   export const getGenres = async () => {
     return fetch(
@@ -60,7 +61,7 @@ export const getMovie = (args) => {
     .catch((error) => {
       throw error
    });
-  };
+  };  
   
   export const getMovieReviews = (id) => {
     return fetch(
@@ -71,4 +72,12 @@ export const getMovie = (args) => {
         // console.log(json.results);
         return json.results;
       });
+  };
+  
+  export const getUpcomingMovies = () => {
+    return fetch(
+      `https://api.themoviedb.org/3/movie/upcoming?api_key=${import.meta.env.VITE_TMDB_KEY}&language=en-US&page=1`
+    )
+      .then(res => res.json())
+      .then(json => json.results);
   };

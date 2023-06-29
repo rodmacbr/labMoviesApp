@@ -62,4 +62,3 @@ const MovieHeader = (props) => {
 };
 
 export default MovieHeader;
-
